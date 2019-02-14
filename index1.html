@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My calculator</title>
+	<style type="text/css">
+	body
+	{
+		background-image: url(css/math.jpg);
+		text-align: center;
+	}
+	div
+    {
+	
+	width: 600px;
+	height: 600px;
+	position: absolute;
+	top: 15%;
+	left: 30%;
+	text-align: center;
+	
+	}
+	button
+	{
+	width: 120px;
+	height: 100px;
+	font-size: 50px;
+	background-color: rgb(153, 51, 255);
+	border-style: solid;
+	border-color: black;
+	border-width: 10px;
+	border-radius: 20%;
+	}
+	button:hover
+	{
+		background-color: rgb(153, 204, 0);
+		transition: 0.5s linear;
+	}
+	
+	input[id="results"]
+	{
+	width: 550px;
+	height: 90px;
+	text-align: right;
+	font-size: 50px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: black;
+	border-radius: 20%;
+	}
+	
+	</style>	
+	<script type="text/javascript">
+		function a1()
+		{
+			var results=document.getElementById("results")
+			results.value= results.value +1;
+		}
+		function a2()
+		{
+			var results=document.getElementById("results")
+			results.value= results.value +2;
+		}
+		function a3()
+		{
+			var results=document.getElementById("results")
+			results.value= results.value +3;
+		}
+		function a4()
+		{
+			var results=document.getElementById("results")
+			results.value= results.value +4;
+		}
+		function a5()
+		{
+			var results=document.getElementById("results")
+			results.value= results.value +5;
+		}
+		function a6()
+		{
+			var results=document.getElementById("results")
+			results.value= results.value +6;
+		}
+		function a7()
+		{
+			var results=document.getElementById("results")
+			results.value= results.value +7;
+		}
+		function a8()
+		{
+			var results=document.getElementById("results")
+			results.value= results.value +8;
+		}
+		function a9()
+		{
+			var results=document.getElementById("results")
+			results.value= results.value +9;
+		}
+		function ac()
+		{
+			var results=document.getElementById("results")
+			results.value="";
+		}
+		function aa()
+		{
+			var results=document.getElementById("results")
+			results.value= results.value +".";
+		}
+		function a11()
+		{
+			var results=document.getElementById("results")
+			results.value= eval(results.value);
+		}
+		function add()
+		{
+			var results=document.getElementById("results")
+			results.value=results.value +"+";
+		}
+		function sub()
+		{
+			var results=document.getElementById("results")
+			results.value= results.value + "-";
+		}
+		function mul()
+		{
+			var results=document.getElementById("results")
+			results.value= results.value + "*";
+		}
+		function dev()
+		{
+			var results=document.getElementById("results")
+			results.value= results.value + "/";
+		}
+		function Del()
+		{
+			var results=document.getElementById("results")
+			results.value= results.value.substring(0,results.value.length-1);
+		}
+
+	</script>
+</head>
+<body>
+	<p style="color: black; font-size: 50px;">My Calculator</p>
+	<div>
+		<input id="results" value="">
+		<button onclick="a1()">1</button>
+		<button onclick="a2()">2</button>
+		<button onclick="a3()">3</button>
+		<button onclick="add()">+</button>
+		<button onclick="a4()">4</button>
+		<button onclick="a5()">5</button>
+		<button onclick="a6()">6</button>
+		<button onclick="sub()">-</button>
+		<button onclick="a7()">7</button>
+		<button onclick="a8()">8</button>
+		<button onclick="a9()">9</button>
+		<button onclick="mul()">*</button>
+		<button onclick="aa()">.</button>
+		<button onclick="a0()">0</button>
+		<button onclick="ac()">C</button>
+		<button onclick="dev()">/</button>
+		<button onclick="a11()" style="width: 300px;">=</button>
+		<button onclick="Del()">Del</button>
+		<p>@Invented by Hout</p>
+	</div>
+
+</body>
+</html>
